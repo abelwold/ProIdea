@@ -1,4 +1,1 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://pro-idea-abels-projects-56f2149c.vercel.app/sitemap.txt
+Sitemap: https://pro-idea-abels-projects-56f2149c.vercel.app/api/sitemap
