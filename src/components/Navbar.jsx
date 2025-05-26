@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { FiMenu, FiX } from 'react-icons/fi';
 import { FaMoon, FaSun } from 'react-icons/fa';
 import { useTheme } from '../context/ThemeContext';
@@ -9,18 +9,35 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const { darkMode, toggleTheme } = useTheme();
   const { i18n, t } = useTranslation();
+  const location = useLocation();
 
   const toggleMenu = () => setIsOpen(!isOpen);
+  const isActive = (path) => location.pathname === path;
 
   const handleLangChange = (e) => {
     i18n.changeLanguage(e.target.value);
-    setIsOpen(false); // ✅ closes mobile menu on change
+    setIsOpen(false);
   };
+
+  const navLinkClasses = (path) =>
+    `relative pb-1 transition duration-300 ${
+      isActive(path)
+        ? 'text-indigo-600 dark:text-indigo-400 font-semibold'
+        : 'hover:text-indigo-600 dark:hover:text-indigo-400'
+    }`;
+
+  const underlineClasses = (path) =>
+    `absolute left-0 -bottom-0.5 h-0.5 bg-indigo-600 dark:bg-indigo-400 transition-all duration-300 ${
+      isActive(path) ? 'w-full' : 'w-0 group-hover:w-full'
+    }`;
 
   return (
     <nav className="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100 shadow-md sticky top-0 z-50 px-4 sm:px-6 py-4">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
-  
+        {/* Logo */}
+        <Link to="/" className="text-2xl font-bold text-indigo-600 dark:text-indigo-300">
+          Abel Nerea
+        </Link>
 
         {/* Right-side controls */}
         <div className="flex items-center space-x-4">
@@ -36,13 +53,17 @@ export default function Navbar() {
             </select>
           </div>
 
-        
+          {/* Dark Mode Toggle */}
+          <button
+            onClick={toggleTheme}
+            className="text-xl p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+            title="Toggle Dark Mode"
+          >
+            {darkMode ? <FaSun className="text-yellow-400" /> : <FaMoon className="text-indigo-400" />}
+          </button>
 
           {/* Mobile Menu Icon */}
-          <button
-            onClick={toggleMenu}
-            className="md:hidden text-2xl focus:outline-none"
-          >
+          <button onClick={toggleMenu} className="md:hidden text-2xl focus:outline-none">
             {isOpen ? <FiX /> : <FiMenu />}
           </button>
         </div>
@@ -50,19 +71,37 @@ export default function Navbar() {
 
       {/* Links - Desktop */}
       <div className="hidden md:flex justify-center mt-2 space-x-6">
-        <Link to="/" className="hover:text-indigo-600 dark:hover:text-indigo-400">Home</Link>
-        <Link to="/projects" className="hover:text-indigo-600 dark:hover:text-indigo-400">Projects</Link>
-        <Link to="/about" className="hover:text-indigo-600 dark:hover:text-indigo-400">About</Link>
-        <Link to="/contact" className="hover:text-indigo-600 dark:hover:text-indigo-400">Contact</Link>
+        {['/', '/projects', '/about', '/contact'].map((path, i) => {
+          const label = ['nav.home', 'nav.projects', 'nav.about', 'nav.contact'][i];
+          return (
+            <div key={path} className="group relative">
+              <Link to={path} className={navLinkClasses(path)}>
+                {t(label)}
+                <span className={underlineClasses(path)}></span>
+              </Link>
+            </div>
+          );
+        })}
       </div>
 
       {/* Links - Mobile */}
       {isOpen && (
         <div className="md:hidden mt-4 px-4 pb-4 flex flex-col space-y-3">
-          <Link to="/" onClick={() => setIsOpen(false)} className="hover:text-indigo-600 dark:hover:text-indigo-400">Home</Link>
-          <Link to="/projects" onClick={() => setIsOpen(false)} className="hover:text-indigo-600 dark:hover:text-indigo-400">Projects</Link>
-          <Link to="/about" onClick={() => setIsOpen(false)} className="hover:text-indigo-600 dark:hover:text-indigo-400">About</Link>
-          <Link to="/contact" onClick={() => setIsOpen(false)} className="hover:text-indigo-600 dark:hover:text-indigo-400">Contact</Link>
+          {['/', '/projects', '/about', '/contact'].map((path, i) => {
+            const label = ['nav.home', 'nav.projects', 'nav.about', 'nav.contact'][i];
+            return (
+              <Link
+                key={path}
+                to={path}
+                onClick={() => setIsOpen(false)}
+                className={`hover:text-indigo-600 dark:hover:text-indigo-400 ${
+                  isActive(path) ? 'text-indigo-600 dark:text-indigo-400 font-semibold' : ''
+                }`}
+              >
+                {t(label)}
+              </Link>
+            );
+          })}
 
           {/* Language Switcher - Mobile */}
           <div className="pt-2">

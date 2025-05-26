@@ -140,6 +140,13 @@
   "emailPlaceholder": "twoj@email.com",
   "messagePlaceholder": "Napisz coś...",
   "button": "Wyślij wiadomość"
+},
+"nav": {
+  "home": "Strona Główna",
+  "projects": "Projekty",
+  "about": "O Mnie",
+  "contact": "Kontakt"
 }
+
 
 }
