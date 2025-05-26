@@ -25,7 +25,7 @@ export default function HeroSection() {
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <a
-              href="/Abel_Nerea_Resume_Updated_25.pdf"
+              href="/Abel_Nerea_Resume_Updated_25_pdf.pdf"
               download
               className="inline-flex items-center justify-center gap-2 px-5 py-2 bg-indigo-600 text-white font-medium rounded-lg hover:bg-indigo-700 transition"
             >
