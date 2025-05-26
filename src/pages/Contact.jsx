@@ -1,9 +1,11 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import { useTranslation } from 'react-i18next';
 
 export default function Contact() {
   const formRef = useRef();
   const [status, setStatus] = useState(null);
+  const { t } = useTranslation();
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -31,64 +33,70 @@ export default function Contact() {
     <section className="bg-indigo-50 dark:bg-gray-900 py-16 px-4 sm:px-6 text-gray-900 dark:text-gray-100">
       <div className="max-w-3xl mx-auto text-center">
         <h2 className="text-3xl md:text-5xl font-bold text-indigo-700 dark:text-indigo-300 mb-6">
-          Contact Me
+          {t('contact.title')}
         </h2>
         <p className="text-lg text-gray-700 dark:text-gray-300 mb-8">
-          Whether it's for collaboration, freelancing, or just to say hi — I'm always open to connecting.
+          {t('contact.description')}
         </p>
 
         {status === 'success' && (
           <div className="mb-6 p-4 bg-green-100 dark:bg-green-800 text-green-800 dark:text-green-100 border border-green-300 dark:border-green-600 rounded-lg">
-            ✅ Message sent successfully!
+            {t('contact.success')}
           </div>
         )}
         {status === 'error' && (
           <div className="mb-6 p-4 bg-red-100 dark:bg-red-800 text-red-800 dark:text-red-100 border border-red-300 dark:border-red-600 rounded-lg">
-            ❌ Failed to send message. Please try again.
+            {t('contact.error')}
           </div>
         )}
         {status === 'loading' && (
           <div className="mb-6 p-4 bg-blue-100 dark:bg-blue-800 text-blue-800 dark:text-blue-100 border border-blue-300 dark:border-blue-600 rounded-lg">
-            ⏳ Sending your message...
+            {t('contact.loading')}
           </div>
         )}
 
         <form ref={formRef} onSubmit={sendEmail} className="bg-white dark:bg-gray-800 shadow-lg rounded-lg p-8 text-left">
           <div className="mb-4">
-            <label className="block text-gray-700 dark:text-gray-200 font-medium mb-2">Name</label>
+            <label className="block text-gray-700 dark:text-gray-200 font-medium mb-2">
+              {t('contact.nameLabel')}
+            </label>
             <input
               name="user_name"
               type="text"
-              className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-              placeholder="Your name"
+              placeholder={t('contact.namePlaceholder')}
               required
+              className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-indigo-500"
             />
           </div>
           <div className="mb-4">
-            <label className="block text-gray-700 dark:text-gray-200 font-medium mb-2">Email</label>
+            <label className="block text-gray-700 dark:text-gray-200 font-medium mb-2">
+              {t('contact.emailLabel')}
+            </label>
             <input
               name="user_email"
               type="email"
-              className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-              placeholder="you@example.com"
+              placeholder={t('contact.emailPlaceholder')}
               required
+              className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-indigo-500"
             />
           </div>
           <div className="mb-4">
-            <label className="block text-gray-700 dark:text-gray-200 font-medium mb-2">Message</label>
+            <label className="block text-gray-700 dark:text-gray-200 font-medium mb-2">
+              {t('contact.messageLabel')}
+            </label>
             <textarea
               name="message"
               rows="5"
-              className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-indigo-500 resize-y"
-              placeholder="Tell me something..."
+              placeholder={t('contact.messagePlaceholder')}
               required
+              className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-indigo-500 resize-y"
             ></textarea>
           </div>
           <button
             type="submit"
             className="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition"
           >
-            Send Message
+            {t('contact.button')}
           </button>
         </form>
       </div>

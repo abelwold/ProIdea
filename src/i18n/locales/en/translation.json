@@ -1,0 +1,152 @@
+{
+  "hero": {
+    "headline": "Crafting Personal & Family Web Experiences",
+    "description": "I design and build custom digital spaces to help individuals and families preserve memories and manage their digital lives with ease."
+  },
+  "buttons": {
+    "download": "Download Resume",
+    "projects": "See Project Ideas"
+  },
+  "footer": {
+    "aboutTitle": "About",
+    "aboutText": "Developer and designer creating personalized web applications — from family tools to finance dashboards — focused on clarity, connection, and long-term value.",
+    "quickLinks": "Quick Links",
+    "services": "Services",
+    "contact": "Contact",
+    "home": "Home",
+    "projects": "Projects",
+    "about": "About",
+    "contactPage": "Contact",
+    "customDashboards": "Custom Dashboards",
+    "financeTools": "Finance Tools",
+    "legacyVaults": "Legacy Vaults",
+    "familySystems": "Family Systems",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "copyright": "All rights reserved."
+  },
+ "projects": {
+  "sectionTitle": "Project Ideas",
+  "unifiedLife": {
+    "title": "UnifiedLife Hub",
+    "desc": "A centralized dashboard for managing travel, documents, finance, and memories.",
+    "fullDescription": "UnifiedLife Hub is a comprehensive personal dashboard designed to bring together essential life data. It includes modules for travel history, document management, income/expense tracking, memory storage, and residential history — all in one secure space.",
+    "features": [
+      "Interactive travel logger with stats and filters",
+      "Secure document uploads with metadata",
+      "Finance tracker with recurring entry logic and CSV export",
+      "Memory vault for images and videos",
+      "Residence history timeline and current location summary"
+    ]
+  },
+  "financeTracker": {
+    "title": "Smart Finance Tracker",
+    "desc": "Track income, expenses, and visualize your financial journey.",
+    "fullDescription": "Smart Finance Tracker helps individuals and families manage income and spending with clarity. It includes recurring logic, charts, file uploads, and CSV export to give you complete control over your financial story.",
+    "features": [
+      "Income and expense logging with categories",
+      "Recurring payments and reminders",
+      "Bar and pie chart summaries",
+      "CSV export for analysis",
+      "File upload for receipts or notes"
+    ]
+  },
+  "legacyVault": {
+    "title": "Legacy Vault",
+    "desc": "Preserve stories, messages, and memories for future generations.",
+    "fullDescription": "Legacy Vault is a memory preservation app that allows users to store personal audio, video, and written messages. It's a digital time capsule — ideal for sharing wisdom, love, and history across generations.",
+    "features": [
+      "Audio/video message uploads",
+      "Letters to the future functionality",
+      "Secure and private access per user",
+      "Organized media timelines",
+      "Support for tagging and categorizing memories"
+    ]
+  },
+  "assetManager": {
+    "title": "Asset Manager",
+    "desc": "Track and visualize family wealth and property ownership.",
+    "fullDescription": "Asset Manager is a visual finance tool that helps track assets, inheritance, and property. Designed for transparency and long-term planning, it includes upload support, charts, and family member categorization.",
+    "features": [
+      "Asset creation with owner metadata",
+      "Charts showing value by year or type",
+      "Upload ownership documents",
+      "Categorization by family member",
+      "Exportable views"
+    ]
+  },
+  "milestoneTracker": {
+    "title": "Milestone Tracker",
+    "desc": "Document and showcase educational and career achievements.",
+    "fullDescription": "Milestone Tracker allows users to document education and career growth. From certificates to job changes, it captures life’s progress with visual filters and timeline displays.",
+    "features": [
+      "Timeline of achievements by person",
+      "Document uploads (certificates, diplomas)",
+      "Tag milestones by education level or field",
+      "Visual filters by role or phase",
+      "Optional export or printing"
+    ]
+  },
+  "familyTree": {
+    "title": "Family Tree Viewer",
+    "desc": "Map family relationships visually with profile-linked data.",
+    "fullDescription": "Family Tree Viewer is an interactive tool for visualizing family connections. It renders relationships dynamically with photos, types, and click-to-view profiles for deep exploration.",
+    "features": [
+      "Dynamic tree layout using graph libraries",
+      "Profile images and relationship types",
+      "Click to view details",
+      "Firestore or custom backend integration",
+      "Designed for personal and extended family use"
+    ]
+  },
+  "cloudDashboard": {
+    "title": "Private Cloud Dashboard",
+    "desc": "Lightweight file storage system for private groups or families.",
+    "fullDescription": "Private Cloud Dashboard offers a secure and minimal file-sharing platform for families or teams. With Firebase support, tagging, and search filters, it’s easy to store and access files privately.",
+    "features": [
+      "Upload files with category and tags",
+      "Firestore/Storage backend",
+      "Access control per user",
+      "Preview support for images/docs",
+      "Search and sort utilities"
+    ]
+  },
+  "moreInfo": "More Info",
+  "previewComingSoon": "Preview Coming Soon"
+}
+,
+  "about": {
+  "sectionTitle": "About Me",
+  "intro1": "I'm Abel Nerea — a creative developer and designer based in Poland. I blend logic and aesthetics to deliver impactful web solutions.",
+  "intro2": "From personal family apps to client portfolios, I specialize in React, Firebase, and Tailwind CSS. I value clean code, responsive design, and purposeful user experience.",
+  "skillsTitle": "My Skills",
+  "drivesMeTitle": "What Drives Me",
+  "drivesMeText": "I believe technology is best when it brings people together. Whether it's preserving memories through apps or solving workflow problems, I approach each project with empathy, curiosity, and a desire to simplify lives.",
+  "timelineTitle": "Timeline",
+  "edu": "2023 - MSc in Computer Engineering, Vistula University",
+  "eduDesc": "Graduated with a strong focus on full-stack development and data-driven projects.",
+  "a1qa": "2022 - QA Engineer Intern at A1QA",
+  "a1qaDesc": "Built and ran automation scripts using Selenium and GitHub for collaborative testing.",
+  "testronic": "2021 - Game Tester at Testronic",
+  "testronicDesc": "Performed exploratory and scripted tests, logged bugs using Jira.",
+  "testimonialsTitle": "Testimonials",
+  "testimonial1": "\"Abel consistently delivered clean, efficient solutions and contributed to better workflows with his curiosity and team spirit.\" — Mentor at A1QA",
+  "testimonial2": "\"His ability to translate abstract ideas into working, user-friendly interfaces is top-notch.\" — Former Project Collaborator"
+}
+,"contact": {
+  "title": "Contact Me",
+  "description": "Whether it's for collaboration, freelancing, or just to say hi — I'm always open to connecting.",
+  "success": "✅ Message sent successfully!",
+  "error": "❌ Failed to send message. Please try again.",
+  "loading": "⏳ Sending your message...",
+  "nameLabel": "Name",
+  "emailLabel": "Email",
+  "messageLabel": "Message",
+  "namePlaceholder": "Your name",
+  "emailPlaceholder": "you@example.com",
+  "messagePlaceholder": "Tell me something...",
+  "button": "Send Message"
+}
+
+}

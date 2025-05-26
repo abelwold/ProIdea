@@ -1,0 +1,145 @@
+{
+  "hero": {
+    "headline": "Tworzenie Osobistych i Rodzinnych Doświadczeń Webowych",
+    "description": "Projektuję i buduję cyfrowe przestrzenie, które pomagają rodzinom zachować wspomnienia i łatwo zarządzać życiem cyfrowym."
+  },
+  "buttons": {
+    "download": "Pobierz CV",
+    "projects": "Zobacz Pomysły na Projekty"
+  },
+  "footer": {
+    "aboutTitle": "O mnie",
+    "aboutText": "Programista i projektant tworzący spersonalizowane aplikacje internetowe — od narzędzi rodzinnych po panele finansowe — skupiając się na przejrzystości, połączeniu i trwałej wartości.",
+    "quickLinks": "Szybkie Linki",
+    "services": "Usługi",
+    "contact": "Kontakt",
+    "home": "Strona Główna",
+    "projects": "Projekty",
+    "about": "O mnie",
+    "contactPage": "Kontakt",
+    "customDashboards": "Panele Dostosowane",
+    "financeTools": "Narzędzia Finansowe",
+    "legacyVaults": "Skarbnice Rodzinne",
+    "familySystems": "Systemy Rodzinne",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "copyright": "Wszelkie prawa zastrzeżone."
+  },
+  "projects": {
+    "sectionTitle": "Pomysły na Projekty",
+    "unifiedLife": {
+      "title": "UnifiedLife Hub",
+      "desc": "Scentralizowany panel do zarządzania podróżami, dokumentami, finansami i wspomnieniami.",
+      "features": [
+        "Interaktywny rejestr podróży ze statystykami i filtrami",
+        "Bezpieczne przesyłanie dokumentów z metadanymi",
+        "Śledzenie finansów z logiką powtarzalnych wpisów i eksportem CSV",
+        "Sejf wspomnień na zdjęcia i filmy",
+        "Oś czasu historii zamieszkania i podsumowanie bieżącej lokalizacji"
+      ], "fullDescription": "UnifiedLife Hub to kompleksowy panel osobisty zaprojektowany z myślą o przechowywaniu kluczowych danych życiowych. Zawiera moduły do historii podróży, dokumentów, finansów, wspomnień i miejsc zamieszkania — wszystko w jednym, bezpiecznym miejscu."
+    },
+    "financeTracker": {
+      "title": "Smart Finance Tracker",
+      "desc": "Śledź dochody, wydatki i wizualizuj swoją finansową podróż.",
+      "features": [
+        "Rejestrowanie dochodów i wydatków według kategorii",
+        "Powtarzające się płatności i przypomnienia",
+        "Podsumowania w formie wykresów słupkowych i kołowych",
+        "Eksport CSV do analizy",
+        "Przesyłanie plików (paragony, notatki)"
+      ],"fullDescription": "Smart Finance Tracker pomaga osobom i rodzinom śledzić dochody i wydatki w sposób przejrzysty. Obsługuje powtarzające się wpisy, wykresy, przesyłanie plików i eksport CSV, zapewniając pełną kontrolę nad finansami."
+    },
+    "legacyVault": {
+      "title": "Vault Dziedzictwa",
+      "desc": "Zachowaj historie, wiadomości i wspomnienia dla przyszłych pokoleń.",
+      "features": [
+        "Przesyłanie wiadomości audio/wideo",
+        "Funkcja listów do przyszłości",
+        "Bezpieczny i prywatny dostęp dla użytkownika",
+        "Zorganizowana oś czasu mediów",
+        "Obsługa tagowania i kategoryzowania wspomnień"
+      ],"fullDescription": "Vault Dziedzictwa to aplikacja do przechowywania wspomnień, umożliwiająca nagrywanie i zachowywanie osobistych wiadomości audio, wideo oraz pisemnych. To cyfrowa kapsuła czasu, idealna do przekazywania miłości i historii kolejnym pokoleniom."
+    },
+    "assetManager": {
+      "title": "Menedżer Majątku",
+      "desc": "Śledź i wizualizuj majątek rodziny i posiadłości.",
+      "features": [
+        "Tworzenie zasobów z metadanymi właściciela",
+        "Wykresy pokazujące wartość według roku lub typu",
+        "Przesyłanie dokumentów własności",
+        "Kategoryzacja według członka rodziny",
+        "Eksportowalne widoki"
+      ],"fullDescription": "Menedżer Majątku to narzędzie do wizualnego śledzenia majątku rodzinnego, spadków i nieruchomości. Zostało zaprojektowane z myślą o transparentności i długoterminowym planowaniu, z możliwością przesyłania dokumentów i tworzenia wykresów."
+    },
+    "milestoneTracker": {
+      "title": "Śledzenie Kamieni Milowych",
+      "desc": "Dokumentuj i prezentuj osiągnięcia edukacyjne i zawodowe.",
+      "features": [
+        "Oś czasu osiągnięć według osoby",
+        "Przesyłanie dokumentów (certyfikaty, dyplomy)",
+        "Tagowanie według poziomu edukacji lub dziedziny",
+        "Filtry wizualne według roli lub etapu",
+        "Opcjonalny eksport lub druk"
+      ],"fullDescription": "Śledzenie Kamieni Milowych umożliwia dokumentowanie postępów edukacyjnych i zawodowych. Od dyplomów po zmiany kariery — aplikacja wizualizuje rozwój użytkownika w formie osi czasu i przefiltrowanych widoków."
+    },
+    "familyTree": {
+      "title": "Przeglądarka Drzewa Rodzinnego",
+      "desc": "Wizualizuj relacje rodzinne z danymi powiązanymi z profilami.",
+      "features": [
+        "Dynamiczny układ drzewa z wykorzystaniem bibliotek grafowych",
+        "Zdjęcia profilowe i typy relacji",
+        "Kliknij, aby zobaczyć szczegóły",
+        "Integracja z Firestore lub własnym backendem",
+        "Zaprojektowane do użytku osobistego i rodzinnego"
+      ],"fullDescription": "Przeglądarka Drzewa Rodzinnego to interaktywne narzędzie do wizualizacji relacji rodzinnych. Dynamicznie rysuje strukturę drzewa genealogicznego z wykorzystaniem zdjęć, typów relacji i szczegółowych profili dostępnych po kliknięciu."
+    },
+    "cloudDashboard": {
+      "title": "Prywatny Panel Chmurowy",
+      "desc": "Lekki system przechowywania plików dla prywatnych grup lub rodzin.",
+      "features": [
+        "Przesyłanie plików z kategorią i tagami",
+        "Backend Firestore/Storage",
+        "Kontrola dostępu dla użytkownika",
+        "Podgląd obrazów/dokumentów",
+        "Wyszukiwanie i sortowanie"
+      ],"fullDescription": "Prywatny Panel Chmurowy to lekka platforma do bezpiecznego udostępniania plików w rodzinie lub zespole. Dzięki integracji z Firebase, tagowaniu i filtrom wyszukiwania zapewnia szybki i prywatny dostęp do zasobów."
+    },
+    "moreInfo": "Więcej informacji",
+    "previewComingSoon": "Podgląd wkrótce dostępny"
+  },
+  "about": {
+  "sectionTitle": "O Mnie",
+  "intro1": "Jestem Abel Nerea — kreatywny programista i projektant mieszkający w Polsce. Łączę logikę z estetyką, aby dostarczać efektywne rozwiązania internetowe.",
+  "intro2": "Od aplikacji rodzinnych po portfolia klientów — specjalizuję się w React, Firebase i Tailwind CSS. Cenię czysty kod, responsywny design i przemyślaną obsługę użytkownika.",
+  "skillsTitle": "Moje Umiejętności",
+  "drivesMeTitle": "Co Mnie Napędza",
+  "drivesMeText": "Wierzę, że technologia ma największą wartość, gdy łączy ludzi. Niezależnie od tego, czy chodzi o zachowywanie wspomnień, czy rozwiązywanie problemów w pracy — do każdego projektu podchodzę z empatią, ciekawością i chęcią upraszczania życia.",
+  "timelineTitle": "Oś Czasu",
+  "edu": "2023 - Magister inżynierii komputerowej, Vistula University",
+  "eduDesc": "Ukończone studia ze szczególnym naciskiem na full-stack development i projekty oparte na danych.",
+  "a1qa": "2022 - Staż QA Engineer w A1QA",
+  "a1qaDesc": "Tworzenie i uruchamianie skryptów automatyzujących testy przy użyciu Selenium i GitHub.",
+  "testronic": "2021 - Tester Gier w Testronic",
+  "testronicDesc": "Wykonywanie testów eksploracyjnych i według scenariusza, raportowanie błędów w Jira.",
+  "testimonialsTitle": "Opinie",
+  "testimonial1": "\"Abel zawsze dostarczał czyste i efektywne rozwiązania oraz ulepszał procesy dzięki swojej ciekawości i duchowi zespołowemu.\" — Mentor w A1QA",
+  "testimonial2": "\"Jego umiejętność przekładania abstrakcyjnych pomysłów na funkcjonalne, przyjazne interfejsy użytkownika jest na najwyższym poziomie.\" — Były współpracownik"
+}
+,
+"contact": {
+  "title": "Skontaktuj się ze mną",
+  "description": "Czy to współpraca, freelancing, czy po prostu przywitanie — zawsze jestem otwarty na kontakt.",
+  "success": "✅ Wiadomość została wysłana pomyślnie!",
+  "error": "❌ Nie udało się wysłać wiadomości. Spróbuj ponownie.",
+  "loading": "⏳ Wysyłam Twoją wiadomość...",
+  "nameLabel": "Imię",
+  "emailLabel": "Email",
+  "messageLabel": "Wiadomość",
+  "namePlaceholder": "Twoje imię",
+  "emailPlaceholder": "twoj@email.com",
+  "messagePlaceholder": "Napisz coś...",
+  "button": "Wyślij wiadomość"
+}
+
+}

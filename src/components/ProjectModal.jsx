@@ -1,11 +1,20 @@
 import React from 'react';
 import { FaTimes } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
-export default function ProjectModal({ project, onClose }) {
+export default function ProjectModal({ projectKey, onClose }) {
+  const { t } = useTranslation();
+
+  if (!projectKey) return null;
+
+  const title = t(`projects.${projectKey}.title`);
+  const fullDescription = t(`projects.${projectKey}.fullDescription`);
+  const features = t(`projects.${projectKey}.features`, { returnObjects: true });
+
   return (
     <AnimatePresence>
-      {project && (
+      {projectKey && (
         <motion.div
           className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center px-4"
           initial={{ opacity: 0 }}
@@ -29,12 +38,12 @@ export default function ProjectModal({ project, onClose }) {
               <FaTimes />
             </button>
 
-            <h3 className="text-2xl font-bold text-indigo-800 dark:text-indigo-300 mb-4">{project.title}</h3>
-            <p className="text-gray-700 dark:text-gray-300 text-sm mb-4">{project.fullDescription}</p>
+            <h3 className="text-2xl font-bold text-indigo-800 dark:text-indigo-300 mb-4">{title}</h3>
+            <p className="text-gray-700 dark:text-gray-300 text-sm mb-4">{fullDescription}</p>
 
-            {project.features && (
+            {Array.isArray(features) && features.length > 0 && (
               <ul className="list-disc list-inside space-y-1 text-sm text-gray-800 dark:text-gray-200">
-                {project.features.map((feature, i) => (
+                {features.map((feature, i) => (
                   <li key={i}>{feature}</li>
                 ))}
               </ul>
