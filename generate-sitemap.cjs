@@ -1,14 +1,9 @@
-// generate-sitemap.js
-const fs = require("fs");
+// generate-sitemap.js (ESM version)
+import { writeFileSync } from "fs";
 
 const domain = "https://pro-idea-abels-projects-56f2149c.vercel.app";
 
-const pages = [
-  "/",
-  "/projects",
-  "/about",
-  "/contact",
-];
+const pages = ["/", "/projects", "/about", "/contact"];
 
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -24,6 +19,6 @@ ${pages
   .join("\n")}
 </urlset>`;
 
-fs.writeFileSync("public/sitemap.xml", sitemap);
+writeFileSync("public/sitemap.xml", sitemap);
 
 console.log("✅ sitemap.xml generated!");
