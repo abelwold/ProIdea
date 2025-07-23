@@ -71,8 +71,9 @@ export default function Navbar() {
 
       {/* Links - Desktop */}
       <div className="hidden md:flex justify-center mt-2 space-x-6">
-        {['/', '/projects', '/about', '/contact'].map((path, i) => {
-          const label = ['nav.home', 'nav.projects', 'nav.about', 'nav.contact'][i];
+        {['/', '/projects', '/about', '/contact', '/pricing'].map((path, i) => {
+  const label = ['nav.home', 'nav.projects', 'nav.about', 'nav.contact', 'nav.pricing'][i];
+
           return (
             <div key={path} className="group relative">
               <Link to={path} className={navLinkClasses(path)}>
@@ -87,8 +88,8 @@ export default function Navbar() {
       {/* Links - Mobile */}
       {isOpen && (
         <div className="md:hidden mt-4 px-4 pb-4 flex flex-col space-y-3">
-          {['/', '/projects', '/about', '/contact'].map((path, i) => {
-            const label = ['nav.home', 'nav.projects', 'nav.about', 'nav.contact'][i];
+          {['/', '/projects', '/about', '/contact', '/pricing'].map((path, i) => {
+  const label = ['nav.home', 'nav.projects', 'nav.about', 'nav.contact', 'nav.pricing'][i];
             return (
               <Link
                 key={path}

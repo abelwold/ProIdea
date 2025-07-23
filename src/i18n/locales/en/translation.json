@@ -151,7 +151,86 @@
   "home": "Home",
   "projects": "Projects",
   "about": "About",
-  "contact": "Contact"
+  "contact": "Contact",
+  "pricing": "Pricing"
+},
+"services": {
+  "punchCard": {
+    "title": "Loyalty Punch Card System",
+    "desc": "Custom digital punch card system for restaurants or coffee shops, with customer tracking and analytics."
+  },
+  "landingPage": {
+    "title": "Business Website (Landing Page)",
+    "desc": "Modern, mobile-first landing page with branding and contact form."
+  },
+  "multiPage": {
+    "title": "Multi-Page Business Website",
+    "desc": "Responsive website with multiple pages built using React or Next.js."
+  },
+  "portfolio": {
+    "title": "Portfolio Website",
+    "desc": "Custom portfolio to showcase your projects, skills, and resume with animations and SEO."
+  },
+  "ecommerce": {
+    "title": "E-commerce Storefront",
+    "desc": "Complete online store with product pages, cart, and payment integration."
+  },
+  "restaurantMenu": {
+    "title": "Restaurant Menu + Ordering System",
+    "desc": "Interactive food menu and basic online ordering system for takeaway or delivery."
+  },
+  "firebaseSetup": {
+    "title": "Firebase App Setup",
+    "desc": "Authentication, Firestore database, and hosting for web apps."
+  },
+  "adminDashboard": {
+    "title": "Admin Dashboard / Web App Panel",
+    "desc": "Functional dashboard with charts, access control, and filtering tools."
+  },
+  "pwaOptimization": {
+    "title": "Mobile Optimization + PWA",
+    "desc": "Make your web app installable and mobile-first for better user experience."
+  },
+  "seoSetup": {
+    "title": "SEO + Meta Tags Setup",
+    "desc": "Improve Google indexing and social media preview visibility."
+  },
+  "maintenance": {
+    "title": "Monthly Maintenance",
+    "desc": "Ongoing bug fixes and content updates. Up to 5 small tasks/month."
+  },
+  "customFeature": {
+    "title": "Custom Feature Development",
+    "desc": "Request a feature like booking, search filters, or animations."
+  }
+},"pricing": {
+  "title": "💼 Service Packages",
+  "subtitle": "Freelance services tailored for businesses and creatives.",
+  "button": "Request Service"
 }
+,
+"pricingSections": {
+  "bundles": "Bundles",
+  "testimonials": "Testimonials",
+  "faq": "Frequently Asked Questions",
+  "contact": "Get in Touch",
+  "faqItems": {
+    "delivery": {
+      "q": "How long does delivery take?",
+      "a": "1–2 weeks depending on the project scope."
+    },
+    "hosting": {
+      "q": "Do I need hosting/domain?",
+      "a": "Yes, a domain + hosting is required, but I can help you set it up."
+    },
+    "revisions": {
+      "q": "Can I request changes after delivery?",
+      "a": "Absolutely — I offer revisions until you're satisfied."
+    }
+  }
+},
+"prefillMessage": "I'm interested in the service: {{service}}"
+
+
 
 }

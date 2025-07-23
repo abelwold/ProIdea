@@ -145,8 +145,88 @@
   "home": "Strona Główna",
   "projects": "Projekty",
   "about": "O Mnie",
-  "contact": "Kontakt"
-}
+  "contact": "Kontakt",
+  "pricing": "Cennik"
+},
+"services": {
+  "punchCard": {
+    "title": "System Kart Stałych Klientów",
+    "desc": "Cyfrowy system kart lojalnościowych dla restauracji lub kawiarni z analizą klientów."
+  },
+  "landingPage": {
+    "title": "Strona Firmowa (Landing Page)",
+    "desc": "Nowoczesna, mobilna strona z brandingiem i formularzem kontaktowym."
+  },
+  "multiPage": {
+    "title": "Wielostronicowa Strona Firmowa",
+    "desc": "Responsywna strona z wieloma podstronami oparta na React lub Next.js."
+  },
+  "portfolio": {
+    "title": "Strona Portfolio",
+    "desc": "Personalne portfolio z animacjami i SEO, pokazujące projekty i umiejętności."
+  },
+  "ecommerce": {
+    "title": "Sklep Internetowy",
+    "desc": "Kompletny sklep online z produktami, koszykiem i płatnościami."
+  },
+  "restaurantMenu": {
+    "title": "Menu Online + System Zamówień",
+    "desc": "Interaktywne menu z opcją zamówień na wynos lub z dostawą."
+  },
+  "firebaseSetup": {
+    "title": "Konfiguracja Firebase",
+    "desc": "Autoryzacja, baza danych Firestore i hosting aplikacji."
+  },
+  "adminDashboard": {
+    "title": "Panel Administracyjny / Aplikacja Web",
+    "desc": "Dashboard z wykresami, filtrowaniem i zarządzaniem dostępem."
+  },
+  "pwaOptimization": {
+    "title": "Optymalizacja Mobilna + PWA",
+    "desc": "Aplikacja jako PWA z lepszym UX i możliwością instalacji."
+  },
+  "seoSetup": {
+    "title": "SEO + Meta Tagi",
+    "desc": "Popraw widoczność w Google i podgląd na mediach społecznościowych."
+  },
+  "maintenance": {
+    "title": "Miesięczna Opieka Techniczna",
+    "desc": "Aktualizacje, poprawki i pomoc — do 5 małych zadań miesięcznie."
+  },
+  "customFeature": {
+    "title": "Indywidualna Funkcja",
+    "desc": "Zamówienie funkcji jak rezerwacja, filtrowanie lub animacje."
+  }
+},"pricing": {
+  "title": "💼 Pakiety Usług",
+  "subtitle": "Usługi freelance dla firm i twórców.",
+  "button": "Zamów usługę"
+},
+"pricingSections": {
+  "bundles": "Pakiety",
+  "testimonials": "Opinie Klientów",
+  "faq": "Najczęściej Zadawane Pytania",
+  "contact": "Skontaktuj się",
+  "faqItems": {
+    "delivery": {
+      "q": "Jak długo trwa dostawa?",
+      "a": "1–2 tygodnie w zależności od zakresu projektu."
+    },
+    "hosting": {
+      "q": "Czy potrzebuję hostingu lub domeny?",
+      "a": "Tak, potrzebujesz domeny i hostingu — mogę pomóc w konfiguracji."
+    },
+    "revisions": {
+      "q": "Czy mogę poprosić o poprawki?",
+      "a": "Oczywiście — oferuję poprawki aż do pełnej satysfakcji."
+    }
+  }
+},
+"prefillMessage": "Jestem zainteresowany usługą: {{service}}"
+
+
+
+
 
 
 }

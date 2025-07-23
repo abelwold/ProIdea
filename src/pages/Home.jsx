@@ -27,18 +27,18 @@ export default function HeroSection() {
 
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-            <a
-              href="/Abel_Nerea_Resume_Updated_25_pdf.pdf"
+            {/* <a
+              href="/resume.pdf"
               download
               target="_blank"
               rel="noopener noreferrer"
               className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
             >
               📄 {t('buttons.download')}
-            </a>
+            </a> */}
 
             <a
-              href="/Projects"
+              href="/projects"
               className="inline-flex items-center justify-center gap-2 px-5 py-2 bg-indigo-600 text-white font-medium rounded-lg hover:bg-indigo-700 transition"
             >
               💡 {t('buttons.projects')}
